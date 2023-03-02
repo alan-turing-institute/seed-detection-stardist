@@ -1,0 +1,11 @@
+name: seed-stardist-3D
+url: https://github.com/alan-turing-institute/seed-detection-stardist.git
+import: seed-stardist-3D
+model: stardist_seedCT_070622
+args: 
+    model_path: 'https://github.com/alan-turing-institute/mapreader-plant-scivision/raw/main/mapreader-plant-scivision/model_checkpoint_10.pkl'
+    checkpoint_path: 'https://github.com/alan-turing-institute/mapreader-plant-scivision/raw/main/mapreader-plant-scivision/checkpoint_10.pkl'
+prediction_fn:
+    call: predict
+    args:
+        X: path2images
